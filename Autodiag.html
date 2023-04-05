@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úkol 17</title>
+    <link href="css-starsi/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/test17.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <h2>Zvolte problém s automobilem</h2>
+        <p>
+            <button class="btn btn-my-color-outline" type="button" data-toggle="collapse" data-target="#tahne-stranou"
+                aria-expanded="false" aria-controls="tahne-stranou">
+                Řizení táhne na stranu
+            </button>
+        </p>
+        <div class="collapse pl-5" id="tahne-stranou">
+            <div class="card card-body">
+                Táhne vždy řízení na jednu stranu nebo střídavě z jedné na druhou?
+                <p>
+                    <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                        data-target="#jedna-strana" aria-expanded="false" aria-controls="jedna-strana">
+                        Řízení táhne na jednu stranu
+                    </button>
+                </p>
+                <div class="collapse pl-5 py-3 col-9" id="jedna-strana">
+                    <div class="card card-body">
+                        Zkontrolujte tlak a geometrii pneumatik na přední nápravě.
+                    </div>
+                </div>
+                <p>
+                    <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                        data-target="#obe-strany" aria-expanded="false" aria-controls="obe-strany">
+                        Řízení táhne střídavě na obě strany
+                    </button>
+                </p>
+                <div class="collapse pl-5 py-3" id="obe-strany">
+                    <div class="card card-body">
+                        Zkontrolujte tlak a geometrii pneumatik na zadní nápravě.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-my-color-outline" type="button" data-toggle="collapse" data-target="#nestartuje"
+                aria-expanded="false" aria-controls="nestartuje">
+                Nestartuje
+            </button>
+        </p>
+        <div class="collapse pl-5" id="nestartuje">
+            <div class="card card-body">
+                Má akumulátor napětí přes 12V?
+                <p>
+                    <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                        data-target="#ma-dvanact" aria-expanded="false" aria-controls="ma-dvanact">
+                        Ano
+                    </button>
+                </p>
+                <div class="collapse pl-5 py-3" id="ma-dvanact">
+                    <div class="card card-body">
+                        Doplňte pohonné hmoty.
+                    </div>
+                </div>
+                <p>
+                    <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                        data-target="#nema-dvanact" aria-expanded="false" aria-controls="nema-dvanact">
+                        Ne
+                    </button>
+                </p>
+                <div class="collapse pl-5 py-3" id="nema-dvanact">
+                    <div class="card card-body">
+                        Dobíjeli jste v nejbližší době akumulátor?
+                        <p>
+                            <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                                data-target="#dobijeli" aria-expanded="false" aria-controls="dobijeli">
+                                Ano
+                            </button>
+                        </p>
+                        <div class="collapse pl-5 py-3" id="dobijeli">
+                            <div class="card card-body">
+                                Ověřte funkčnost alternátoru a životnost akumulátoru.
+                            </div>
+                        </div>
+                        <p>
+                            <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                                data-target="#nedobijeli" aria-expanded="false" aria-controls="nedobijeli">
+                                Ne
+                            </button>
+                        </p>
+                        <div class="collapse pl-5 py-3" id="nedobijeli">
+                            <div class="card card-body">
+                                Dobijte akumulátor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            <button class="btn btn-my-color-outline" type="button" data-toggle="collapse"
+                data-target="#vysoka-teplota" aria-expanded="false" aria-controls="vysoka-teplota">
+                Vysoká teplota motoru
+            </button>
+        </p>
+        <div class="collapse pl-5" id="vysoka-teplota">
+            <div class="card card-body">
+                Je v nádržce chladící kapaliny nad ryskou MIN?
+                <p>
+                    <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                        data-target="#dostatek-kapaliny" aria-expanded="false" aria-controls="dostatek-kapaliny">
+                        Ano
+                    </button>
+                </p>
+                <div class="collapse pl-5 py-3" id="dostatek-kapaliny">
+                    <div class="card card-body">
+                        Zkontrolujte činnost oběhového systému.
+                    </div>
+                </div>
+                <p>
+                    <button class="btn btn-my-color-outline cudlik" type="button" data-toggle="collapse"
+                        data-target="#nedostatek" aria-expanded="false" aria-controls="nedostatek">
+                        Ne
+                    </button>
+                </p>
+                <div class="collapse pl-5 py-3" id="nedostatek">
+                    <div class="card card-body">
+                        Doplňte chladící kapalinu příslušného typu.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            <button class="btn btn-my-color-outline" type="button" data-toggle="collapse"
+                data-target="#jiny-problem" aria-expanded="false" aria-controls="jiny-problem">
+                Jiný problém
+            </button>
+        </p>
+        <div class="collapse pl-5" id="jiny-problem">
+            <div class="card card-body">
+                Navštivte prosím autorizovaný servis.
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
